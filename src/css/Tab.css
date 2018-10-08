@@ -1,0 +1,32 @@
+.tabulation {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    position: relative;
+}
+.closeTab {
+    position: absolute;
+    right: 7px;
+    top: 9px;
+}
+
+.closeTab > i,
+.closeTab > span {
+    color: lightgrey;
+}
+
+.closeTab > i:hover,
+.closeTab > span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.tab-content,
+.tab-pane {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}

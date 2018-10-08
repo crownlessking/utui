@@ -1,0 +1,27 @@
+
+.unit-test {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: antiquewhite;
+}
+
+.tab-content>.active {
+    display: flex;
+}
+
+.unit-test-row {
+    height: 50px;
+}
+
+/* url: https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag */
+.unit-test-output {
+    font-size: 10pt;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-break: break-all;
+    overflow-x: hidden;
+}

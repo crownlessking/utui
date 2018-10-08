@@ -1,0 +1,46 @@
+
+.progress-bar-border {
+    background-color: #555;
+    -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    padding: 5px;
+}
+
+.progress-bar-percent {
+    color: white;
+    margin: auto;
+    position: absolute;
+    font-size: 14pt;
+    text-align: center;
+    top: 3px;
+    width: 100%;
+}
+
+.progress-bar-foreground-percent {
+    position: absolute;
+    color: white;
+}
+
+.progress {
+    height: 2.5em;
+}
+/*
+    WARNING: Use this class with the bootstrap progress bar
+*
+/*.progress-bar {
+    background-color: #28a745;
+    border-radius: 5px 0 0 5px;
+    height: 35px;
+    font-size: 14pt;
+}*/
+
+.progress-bar {
+    background-color: #28a745;
+    -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+    border-radius: 25px;
+    height: 22px;
+}

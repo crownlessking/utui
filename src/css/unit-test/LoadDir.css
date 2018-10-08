@@ -1,0 +1,13 @@
+
+.load-dir-title {
+    margin-top: 16px;
+}
+.load-dir-input {
+    margin-top: 8px;
+}
+
+.load-dir-filename::placeholder {
+    font-weight: normal;
+    font-style: italic;
+    font-family: sans-serif;
+}
