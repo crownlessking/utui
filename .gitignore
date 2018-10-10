@@ -22,9 +22,6 @@ yarn-error.log*
 
 /OLD_README.md
 /package-lock.json
-/tsconfig.prod.json
-/tsconfig.test.json
-/tslint.json
 /yarn.lock
 
 /public/css

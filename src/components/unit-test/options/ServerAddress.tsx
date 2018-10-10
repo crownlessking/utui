@@ -7,7 +7,7 @@ interface IState {
   value: string;
 }
 
-let serverAddress: string = 'http://localhost/phpunit-server/';
+let serverAddress: string = '';// 'http://localhost/phpunit-server/';
 
 export default class ServerAddress extends React.Component<{}, IState> {
 
