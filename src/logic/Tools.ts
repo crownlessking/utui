@@ -73,7 +73,7 @@ export function addClass (classes: string, className: string): string {
   if (classes.indexOf(className) >= 0) {
     return classes;
   }
-  if (classes.endsWith(' ')) {
+  if (classes.match(/\s$/)) {
       return classes + className;
   }
   return classes + ' ' + className;
@@ -91,14 +91,3 @@ export function hasClass (classes:string, className:string) :boolean {
   return classes.indexOf(className) >= 0;
 }
 
-/**
- * Makes sure the path is properly formatted.
- *
- * @param address a url or a drectory path
- */
-export function checkPath(address: string): string {
-  address = (address.length > 0 && !address.endsWith('/'))
-    ? address + '/'
-    : address;
-  return address;
-}

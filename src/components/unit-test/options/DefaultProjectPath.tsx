@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Input from 'src/components/bootstrap4/Input';
-import { checkPath } from '../../../logic/Tools';
 import { FormGroup } from '../../bootstrap4/Form';
+import { checkPath } from '../File';
 
 let defaultProjectPath: string = '';
 

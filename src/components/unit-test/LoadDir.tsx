@@ -10,7 +10,8 @@ import Input, {
 import Modal from 'src/components/bootstrap4/modal/Modal';
 import 'src/css/unit-test/LoadDir.css';
 import Config from 'src/logic/Config';
-import { _id, checkPath } from 'src/logic/Tools';
+import { _id } from 'src/logic/Tools';
+import { checkPath } from './File';
 import { getDefaultProjectPath } from './options/DefaultProjectPath';
 
 interface IProps {

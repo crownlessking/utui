@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { checkPath } from '../../../logic/Tools';
 import { FormGroup } from '../../bootstrap4/Form';
 import Input from '../../bootstrap4/Input';
+import { checkPath } from '../File';
 
 interface IState {
   value: string;

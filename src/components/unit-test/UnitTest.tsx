@@ -404,7 +404,8 @@ class UnitTest extends React.Component<IProps, IState> {
     // this.renderLogJson(dat); // DEBUG
 
     if (dat.data && dat.data.files) {
-      this.setFilesList(dat.data.files);
+      const filesList = this.formatFilesList(dat.data.files);
+      this.setFilesList(filesList);
       this.renderLog('Directory loaded successfully!');
       this.renderUpdateFilesList();
     } else if (dat.errors) {
@@ -458,6 +459,21 @@ class UnitTest extends React.Component<IProps, IState> {
       );
       this.outputId++;
     }
+  }
+
+  /**
+   * Format filenames.
+   *
+   *  - Replace backslash with forwardslash.
+   *
+   * @param filesList 
+   */
+  private formatFilesList(filesList: string[]): string[] {
+    const newList: string[] = [];
+    for (const file of filesList) {
+      newList.push(file.replace(/\\/g, '/'));
+    }
+    return newList;
   }
 
   /**

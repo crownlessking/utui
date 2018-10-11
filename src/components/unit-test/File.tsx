@@ -162,10 +162,10 @@ export function getShortname(filename: string): string {
 export function getFileType(shortName: string) {
   const types = getFileTypes();
   const lname = shortName.toLowerCase();
-  if (lname.endsWith('test.php')) {
+  if (lname.match('test.php$')) {
     return types.PHP_TEST_FILE;
   }
-  if (lname.endsWith('.php')) {
+  if (lname.match('.php$')) {
     return types.PHP_FILE;
   }
   return types.OTHER;
@@ -181,5 +181,18 @@ export function getFileTypes() {
     PHP_TEST_FILE: 2
   }
   return types;
+}
+
+/**
+ * Makes sure the path is properly formatted.
+ *
+ * @param address a url or a drectory path
+ */
+export function checkPath(address: string): string {
+  address = address.replace(/\\/g, '/');
+  address = (address.length > 0 && !address.match(/\/$/))
+    ? address + '/'
+    : address;
+  return address;
 }
 
